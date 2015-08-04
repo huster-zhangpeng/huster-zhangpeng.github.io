@@ -1,13 +1,23 @@
 [
 
 {
-"id": "-2015-01-01-hello",
-"title": "Hello, Jekyll and QckTheme",
+"id": "-2015-08-04-tech",
+"title": "技术怎么改变世界",
 "author": null,
-"tags": ["hello", "jekyll", "theme"],
-"url": "/2015/01/01/hello/",
-"date": "2015-01-01",
-"content": "You can use most of standard Markdown features.Listfoobarindentationnesting indentationindentationbuzQuotequotenesting quotequoteStrikethroughMistaken text.Syntax highlighting&lt;?phpecho &#39;Hello, World!&#39;;TablesFirst HeaderSecond HeaderContent CellContent CellContent CellContent CellEmojiYou can use GitHub flavored emoji NoteIt&#39;s not a very good idea to use emoji before &lt;!--more--&gt; because jekyll can&#39;t render emoji in the excerpted content.See alsoMarkdown"
+"tags": ["技术", "中二"],
+"url": "/2015/08/04/tech/",
+"date": "2015-08-04",
+"content": "最近，央行出台新的政策，限制第三方支付每日限额5000，免密支付限额200等等，此其一出，众口议论纷纷，大都觉得央行此举是维护自己的利益，央行不想放弃自己对货币的绝对控制权，第三方支付已经融入到了生活的各个角落，比银行方便多了，银行不思进取追赶，反而通过行政手段压制，卑鄙。"
+}, 
+
+{
+"id": "-2015-08-04-me",
+"title": "个人简历",
+"author": null,
+"tags": ["技术", "互联网", "动漫", "篮球", "狮子座"],
+"url": "/2015/08/04/me/",
+"date": "2015-08-04",
+"content": "简介男，狮子座，热爱技术，喜欢篮球，爱看动漫，是个互联网工作者，这就是标题里面我给自己贴的那些标签了。然而，这篇我自己的简介却并不涉及篮球，动漫，这些标签只是表明我个人的喜好，仅仅而已～老子说：自知者明，我以前也经常问别人你觉得他人怎么看我的，然后我又强调自己并不在乎别人对自己的看法，现在看来当时是多么幼稚，明明很在乎，却有以为在乎别人看法的行为是一种不明智的行为，真二。过往已不可追，毕竟是种人生经历，总会影响着你前进，如今写这篇个人简历，一来姑且谈谈自己对自己的看法，二来在这个多元的社会表明下自己的那一元，以求自己对自己有个正确的认识，从此真的再也不用顾别人的看法，不解释，不含糊！"
 }
 
 ]
