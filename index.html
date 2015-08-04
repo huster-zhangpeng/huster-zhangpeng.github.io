@@ -1,30 +1,299 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    
 
-{% for post in paginator.posts %}
+    
+
+
+
+
+
+
+    
+    
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>北海flash的博客</title>
+
+    <meta name="description" content="进道若退，明道若昧">
+
+    <link rel="shortcut icon" href="/blog/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://localhost:4000/blog/">
+    <link rel="alternate" type="application/atom+xml" title="北海flash的博客" href="http://localhost:4000/blog/feed.xml" />
+
+    
+    
+    
+
+    <meta property="og:title" content="北海flash的博客" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://qckanemoto.github.io/jekyll-qck-theme/assets/img/ogp.png" />
+    <meta property="og:url" content="http://localhost:4000/blog/" />
+    <meta property="og:site_name" content="北海flash的博客" />
+    <meta property="fb:admins" content="" />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:description" content="进道若退，明道若昧" />
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet">
+
+    <link href="/blog/assets/lib/easy-social-buttons/jquery.easy-social-buttons.css" rel="stylesheet">
+    <link href="/blog/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="inner clearfix">
+        
+        <a href="/blog/">
+            <img class="avatar" src="/blog/assets/img/ogp.png" alt=""/>
+        </a>
+        
+        <h1 class="clearfix">
+            <a class="title " href="/blog/">北海flash的博客</a>
+            <p class="description">进道若退，明道若昧</p>
+        </h1>
+    </div>
+</header>
+
+<div class="site-container">
+    <div class="site-content">
+        
 <div class="article-wrapper">
-    {% if site.share_buttons %}
+    
     <article>
-    {% else %}
-    <article>
-    {% endif %}
-    {% include article-header.html page=post link=true %}
+    
+    
+
+<header>
+    <div class="panel">
+        <h1>
+            
+            <a class="post-link" href="/blog/2015/01/01/hello/">Hello, Jekyll and QckTheme</a>
+            
+        </h1>
+
+        <ul class="tags">
+            
+            
+            <li><i class="fa fa-tags"></i></li>
+            
+            
+            <li>
+                <a class="tag" href="/blog/search/?t=hello">#hello</a>
+            </li>
+            
+            <li>
+                <a class="tag" href="/blog/search/?t=jekyll">#jekyll</a>
+            </li>
+            
+            <li>
+                <a class="tag" href="/blog/search/?t=theme">#theme</a>
+            </li>
+            
+        </ul>
+
+        <div class="clearfix">
+            <ul class="meta">
+                
+                <li>
+                    <i class="fa fa-calendar"></i>
+                    2015-01-01
+                </li>
+                
+
+                
+            </ul>
+        </div>
+    </div>
+
+    
+
+    
+    <p style="text-align: center">
+        <img class="eye-catch" src="http://jekyllrb.com/img/logo-2x.png"/>
+    </p>
+    
+</header>
+
         <section class="post-content">
-            {% assign size = post.content | split: site.excerpt_separator | size %}
-            {% if size > 1 %}
-            {{ post.excerpt }}
-            <a class="btn" href="{{ post.url | prepend: site.baseurl }}">{{ site.str_read_more }}</a>
-            {% else %}
-            {{ post.content }}
-            {% endif %}
+            
+            
+            <p>You can use most of standard Markdown features.</p>
+
+<h2 id="list">List</h2>
+
+<ul>
+<li>foo</li>
+<li>bar
+
+<ul>
+<li>indentation
+
+<ul>
+<li>nesting indentation</li>
+</ul></li>
+<li>indentation</li>
+</ul></li>
+<li>buz</li>
+</ul>
+
+            <a class="btn" href="/blog/2015/01/01/hello/">阅读</a>
+            
         </section>
     </article>
 </div>
 
-{% if forloop.last != true %}
-<hr/>
-{% endif %}
-{% endfor %}
 
-{% include paginator.html %}
+
+
+
+
+
+    </div>
+
+    <aside class="site-aside">
+        <div class="inner">
+            <div class="block">
+                <form action="/blog/search">
+                    <input type="search" id="search" name="q" placeholder="搜索" />
+                </form>
+            </div>
+            <ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a class="page-link" href="/blog/about/">关于</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/blog/tags/">标签</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/blog/archives/">归档</a></li>
+                
+                
+            </ul>
+            <ul class="icons">
+                
+
+
+<li>
+    <a href="http://localhost:4000/blog/feed.xml">
+        <i class="fa fa-fw fa-rss"></i>
+    </a>
+</li>
+
+
+
+<li>
+    <a href="mailto:huster.zhangpeng@gmail.com">
+        <i class="fa fa-fw fa-envelope"></i>
+    </a>
+</li>
+
+
+
+<li>
+    <a href="https://github.com/huster-zhangpeng">
+        <i class="fa fa-fw fa-github"></i>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+            <hr class="with-no-margin margin-bottom"/>
+
+            <div class="block sticky">
+                <h1>最近</h1>
+                <ul>
+                    
+                    
+                    <li><a href="/blog/2015/01/01/hello/">Hello, Jekyll and QckTheme</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<footer class="site-footer">
+    <div class="inner">
+        <span>Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://github.com/qckanemoto/jekyll-qck-theme">QckTheme</a></span>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/blog/assets/lib/garand-sticky/jquery.sticky.js"></script>
+<script src="/blog/assets/lib/easy-social-buttons/jquery.social-info.js"></script>
+<script src="/blog/assets/lib/easy-social-buttons/jquery.easy-social-buttons.js"></script>
+<script src="/blog/assets/js/script.js"></script>
+
+
+
+
+
+<!-- Google Analytics -->
+
+
+
+</body>
+</html>

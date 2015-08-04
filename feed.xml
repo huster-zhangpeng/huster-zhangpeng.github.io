@@ -1,31 +1,103 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <atom:link href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <link>{{ site.baseurl | prepend: site.url }}/</link>
-    <description>{{ site.description | xml_escape }}</description>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    {% for post in site.posts limit:15 %}
-      {% include page-url-resolver.html page=post %}
+    <title>北海flash的博客</title>
+    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>http://localhost:4000/blog/</link>
+    <description>进道若退，明道若昧</description>
+    <pubDate>Tue, 04 Aug 2015 16:42:55 +0800</pubDate>
+    
+      
+
+
+
+
+
       <item>
-        <title>{{ post.title | append: ' | ' | append: site.title | xml_escape }}</title>
-        {% if post.eye_catch %}
+        <title>Hello, Jekyll and QckTheme | 北海flash的博客</title>
+        
         <image>
-          <url>{{ post.eye_catch }}</url>
-          <title>{{ post.title }}</title>
-          <link>{{ site.url }}</link>
+          <url>http://jekyllrb.com/img/logo-2x.png</url>
+          <title>Hello, Jekyll and QckTheme</title>
+          <link>http://localhost:4000</link>
         </image>
-        {% endif %}
-        <link>{{ url }}</link>
-        <guid isPermaLink="true">{{ url }}</guid>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        
+        <link>http://localhost:4000/blog/2015/01/01/hello/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/01/01/hello/</guid>
+        <description>&lt;p&gt;You can use most of standard Markdown features.&lt;/p&gt;
+
+&lt;h2 id=&quot;list&quot;&gt;List&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;li&gt;bar
+
+&lt;ul&gt;
+&lt;li&gt;indentation
+
+&lt;ul&gt;
+&lt;li&gt;nesting indentation&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;indentation&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;buz&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;quote&quot;&gt;Quote&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;quote&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;nesting quote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;quote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;strikethrough&quot;&gt;Strikethrough&lt;/h2&gt;
+
+&lt;p&gt;&lt;del&gt;Mistaken text.&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;syntax-highlighting&quot;&gt;Syntax highlighting&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Hello, World!&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2 id=&quot;emoji&quot;&gt;Emoji&lt;/h2&gt;
+
+&lt;p&gt;You can use GitHub flavored emoji &lt;img class='emoji' title=':+1:' alt=':+1:' src='https://assets.github.com/images/icons/emoji/unicode/1f44d.png' height='20' width='20' align='absmiddle' /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;&lt;br&gt;
+It&amp;#39;s not a very good idea to use emoji before &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; because jekyll can&amp;#39;t render emoji in the excerpted content.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;see-also&quot;&gt;See also&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 01 Jan 2015 00:00:00 +0800</pubDate>
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>
